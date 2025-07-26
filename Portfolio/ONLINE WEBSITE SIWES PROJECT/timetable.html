@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Timetable - LASU Online Learning Platform</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!--Header Section-->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/lasu logo.jpeg" alt="LASU Logo">
+        <h1>LASU Online Learning</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="auth/login.html">Login</a></li>
+          <li><a href="register.html" class="btn btn-register">Register</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Timetable Hero Section -->
+   <section class="timetable-section">
+    <div class="container">
+      <div class="timetable-filters">
+        <div class="filter-group">
+          <label for="semester">Semester:</label>
+          <select id="semester">
+            <option value="first">First Semester</option>
+            <option value="Second">Second Semester</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="level">Level:</label>
+          <select id="level">
+            <option value="100">100 Level</option>
+            <option value="200">200 Level</option>
+            <option value="300">300 Level</option>
+            <option value="400">400 Level</option>
+            <option value="500">500 Level</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="department">Departmet:</label>
+          <select id="department">
+            <option value="computer-science">Computer Science</option>
+            <option value="business-admin">Business Administration</option>
+            <option value="law">Law</option>
+            <option value="engineering">Engineering</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" id="apply-timetable-filters">Apply Filters</button>
+      </div>
+
+      <div class="timetable-container">
+        <div class="timetable-header">
+          <h3>First Semester Timetable - 2023/2024 Session</h3>
+          <p>Computer Science - 300 Level</p>
+        </div>
+
+        <div class="timetable">
+          <table>
+            <thead>
+              <tr>
+                <th>Time/Day</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>8:00 - 10:00</td>
+                <td>
+                  <div class="timetable-item">
+                    <strong>CSC 301</strong>
+                    <p>Database System</p>
+                    <p>Prof. Adebayo</p>
+                    <p>Room 24</p>
+                  </div>
+                </td>
+                <td></td>
+                <td>
+                  <div class="timetable-item">
+                    <strong>CSC 303</strong>
+                    <p>Operating Systems</p>
+                    <p>Dr. Johnson</p>
+                    <p>Room 12</p>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>10:00 - 12:00</td>
+                <td></td>
+                <td>
+                  <div class="timetable-item">
+                    <strong>CSC 305</strong>
+                    <p>Computer Networks</p>
+                    <p>Dr. Williams</p>
+                    <p>Room 18</p>
+                  </div>
+                </td>
+                <td></td>
+                <td>
+                  <div class="timetable-item lab">
+                    <strong>CSC 301</strong>
+                    <p>Database Lab</p>
+                    <p>Lab 3</p>
+                  </div>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>12:00 - 2:00</td>
+                <td>
+                  <div class="timetable-item">
+                    <strong>GNS 301</strong>
+                    <p>Entreprenuership</p>
+                    <P>Dr. Okoro</P>
+                    <p>Room 15</p>
+                  </div>
+                </td>
+                <td></td>
+                <td>
+                  <div class="timetable-item">
+                    <strong>CSC 307</strong>
+                    <p>Software Engineering</p>
+                    <p>Prof. Adeleke</p>
+                    <p>Room 24</p>
+                  </div>
+                </td>
+                <td></td>
+                <td>
+                  <div class="timetable-item lab">
+                    <strong>CSC 305</strong>
+                    <p>Network Lab</p>
+                    <p>Lab 2</p>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>2:00 - 4:00</td>
+                <td></td>
+                <td>
+                  <div class="timetable-item">
+                    <strong>MTH 301</strong>
+                    <p>Numerical Analysis</p>
+                    <p>Dr. Bello</p>
+                    <p>Room 10</p>
+                  </div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="timetable-legend">
+          <div class="legend-item">
+            <span class="legend-color lecture"></span>
+            <span>Lecture</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color lab"></span>
+            <span>Laboratory</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-color tutorial"></span>
+            <span>Tutorial</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timtable-actions">
+        <button class="btn btn-secondary"><i class="fas fa-print"></i>Print Timetable</button>
+        <button class="btn btn-primary"><i class="fas fa-download"></i>Download PDF</button>
+      </div>
+    </div>
+   </section>
+
+     <!-- Footer Section -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h3>LASU Online Learning</h3>
+              <p>The official e-learning platform of Lagos State University, providig quality education through technology.</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="calendar.html">Academic Calendar</a></li>
+                <li><a href="help.html">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Lagos State University, Ojo, Lagos</li>
+                <li><i class="fas fa-phone"></i>+2349113775322</li>
+                <li><i class="fas fa-envelope"></i>elearning@lasu.edu.ng</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>$copy; 2023 LASU Online Learning Platform. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/scripts.js"></script>
+</body>
+</html>

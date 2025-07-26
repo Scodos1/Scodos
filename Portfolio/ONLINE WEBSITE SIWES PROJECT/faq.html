@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ - LASU Online Learning</title>
+   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!--Header Section-->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/lasu logo.jpeg" alt="LASU Logo">
+        <h1>LASU Online Learning</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="auth/login.html">Login</a></li>
+          <li><a href="auth/register.html" class="btn btn-register">Register</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- FAQ Hero Section -->
+   <section class="page-hero">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <p>Find answers to common questions about the LASU Online Learning Platform.</p>
+    </div>
+   </section>
+
+   <!-- FAQ Section -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-search">
+          <input type="text" placeholder="Search FAQs...">
+          <button class="btn btn-primary"><i class="fas faq-search"></i>Search</button>
+        </div>
+
+        <div class="faq-categories">
+          <button class="btn btn-category active" data-category="all">All</button>
+          <button class="btn btn-category" data-category="account">Account</button>
+          <button class="btn btn-category" data-category="courses">Courses</button>
+          <button class="btn btn-category" data-category="technical">Technical</button>
+          <button class="btn btn-category" data-category="payment">Payment</button>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item" data-category="account">
+            <div class="faq-question">
+              <h3>How do i create an account?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>To create an account, click on the "Register" button at the top right corner of the page. You'll need to provide your matriculation number, email address, and create a password. After registration, youll receive a confirmation email to activate your account.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="account">
+            <div class="faq-question">
+              <h3>What should I do if I forget my password?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>If you've forgotten your password, click the "Forgot Password" link on the login page. Enter your registered email address, and you'll recieve insructions on how to reset your password.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="courses">
+            <div class="faq-question">
+              <h3>How do i enrol in a course?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>After logging in, browse the available courses and click on the course you're interested in. On the course page, click the "Enroll" button. Some courses may require approval from your department.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="courses">
+            <div class="faq-question">
+              <h3>Can I access course materials after the semester ends?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>Yes, you can access course materials from previous semesters in your dashboard under "My Courses." However, some lecturers may choose to restrict access after a certain period.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-category="technical">
+            <div class="faq-question">
+              <h3>What should I do if I can't access a course?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>First, try refreshing the page or clearing your browser cache. If the problem persists, check your internet connection. If you stil can't access the course, contact our technical support team through the Help Center.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="technical">
+            <div class="faq-question">
+              <h3>What browsers are supported?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>The platform works best with the latest version of Chrome, Firefox, Safari, and Edge. We recommend updating your browser to the latest version for optimal perfomance.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" data-category="payment">
+            <div class="faq-question">
+              <h3>Are there any fees for using the platform?</h3>
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              <p>The LASU Online Learning Platform is free for all registered LASU atudents. There are no additional fees for accessing course materials or submitting assignments.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-contact">
+          <p>Still have questions? <a href="contact.html">Contact our support team</a> for assistance.</p>
+        </div>
+      </div>
+    </section>
+    
+      <!-- Footer Section -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h3>LASU Online Learning</h3>
+              <p>The official e-learning platform of Lagos State University, providing quality education through technology.</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="library.html">E-Library</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="calendar.html">Academic Calendar</a></li>
+                <li><a href="help.html">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><i class="fas fa-map-marker-alt"></i>Lagos State University, Ojo, Lagos</li>
+                <li><i class="fas fa-phone"></i>+2349113775322</li>
+                <li><i class="fas fa-envelope"></i>elearning@lasu.edu.ng</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2023 LASU Online Learning Platform. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/courses.js"></script>
+</body>
+</html>

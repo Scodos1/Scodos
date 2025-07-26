@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Library - LASU Online Learning Platform</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!--Header Section-->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/lasu logo.jpeg" alt="LASU Logo">
+        <h1>LASU Online Learning</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="auth/login.html">Login</a></li>
+          <li><a href="register.html" class="btn btn-register">Register</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!--library Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <h2>E-Library</h2>
+      <p>Access a wide range of academic resources, books, journals, and research materials.</p>
+    </div>
+  </section>
+
+  <!-- Library Section -->
+   <section class="library-section">
+    <div class="container">
+      <div class="library-search">
+        <input type="text" placeholder="Search books, journals, articles...">
+        <button class="btn btn-primary"><i class=" fas fa-search"></i>Search</button>
+      </div>
+
+      <div class="library-filters">
+        <div class="filter-group">
+          <label for="resource-type">Resources Type:</label>
+          <select id="resource-type">
+            <option value="all">All Resources</option>
+            <option value="books">Books</option>
+            <option value="journals">Journals</option>
+            <option value="articles">Articles</option>
+            <option value="theses">Theses</option>
+          </select>
+        </div>
+
+        <div class="filter-group">
+          <label for="department">Department:</label>
+          <select id="department">
+            <option value="all">All Departments</option>
+            <option value="computer-science">Computer Science</option>
+            <option value="business">Business</option>
+            <option value="law">Law</option>
+            <option value="engineering">Engineering</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label for="year">Year:</label>
+          <select id="year">
+            <option value="all">All Years</option>
+            <option value="2025">2025</option>
+            <option value="2024">2024</option>
+            <option value="2023">2023</option>
+            <option value="2022">2022</option>
+            <option value="2021">2021</option>
+            <option value="2020">2020</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="library-results">
+        <div class="results-header">
+          <h3>Featured Resources</h3>
+          <p>Showing 8 of 1,245 resources</p>
+        </div>
+
+        <div class="resources-grid">
+          <div class="resource-card">
+            <div class="resource-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h4>Introduction to Computer Science</h4>
+            <p class="resource-meta">Book &#8226; Computer Science &#8226; 2022</p>
+            <p class="resource-desc">Comprehensive guide to fundamental computer science concepts and programming principles.</p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h4>Journal of Business Research</h4>
+            <p class="resource-meta">Journal &#8226; Business &#8226; 2023</p>
+            <p class="resource-desc">Latest research in business administration, management, and entreprenuership.</p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+
+          <div class="resource-card">
+            <div class="resource-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h4>Engineering Mathematics</h4>
+            <p class="resource-meta">Book &#8226; Engineering &#8226; 2022</p>
+            <p class="resource-desc">Mathematical method and technique for engineering students.</p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+            <div class="resource-card">
+            <div class="resource-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h4>Impact of AI on Business</h4>
+            <p class="resource-meta">Thesis &#8226; Business &#8226; 2023</p>
+            <p class="resource-desc">Research on how artificial intelligence is transforming business operation.</p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+          </div>
+          
+          <div class="resource-card">
+            <div class="resource-icon">
+              <i class="fas fa-file-alt"></i>
+            </div>
+            <h4>Environmental Law Review</h4>
+            <p class="resource-meta">Journal &#8226; Law &#8226; 2021</p>
+            <p class="resource-desc">Analysis of environmental laws and policies in developing countries.</p>
+            <a href="#" class="btn btn-secondary">View Details</a>
+        </div>
+      </div>
+
+      <div class="pagination">
+        <button class="btn btn-secondary" disabled><i class="fas fa-chevron-left"></i>Previous</button>
+        <span>Page 1of 16</span>
+        <button class="btn btn-secondary">Next<i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+   </section>
+
+
+     <!-- Footer Section -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h3>LASU Online Learning</h3>
+              <p>The official e-learning platform of Lagos State University, providig quality education through technology.</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="calendar.html">Academic Calendar</a></li>
+                <li><a href="help.html">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Lagos State University, Ojo, Lagos</li>
+                <li><i class="fas fa-phone"></i>+2349113775322</li>
+                <li><i class="fas fa-envelope"></i>elearning@lasu.edu.ng</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>$copy; 2023 LASU Online Learning Platform. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/scripts.js"></script>
+</body>
+</html>

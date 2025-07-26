@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - LASU Online Learning</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Admin Header Section -->
+    <header class="admin-header">
+        <div class="container">
+            <div class="logo">
+                <img src="../images/lasu logo.jpeg" alt="LASU Logo">
+                <h1>LASU Online Learning <span>Admin</span></h1>
+            </div>
+            <nav class="admin-nav">
+                <ul>
+                    <li><a href="dashboard.html" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="users.html"><i class="fas fa-users"></i> Users</a></li>
+                    <li><a href="courses.html"><i class="fas fa-book"></i> Courses</a></li>
+                    <li><a href="reports.html"><i class="fas fa-chart-bar"></i> Reports</a></li>
+                    <li><a href="../../auth/logout.html" class="btn btn-logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Admin Dashboard Section -->
+    <section class="admin-dashboard">
+        <div class="container">
+            <div class="admin-welcome">
+                <h2>Welcome, <span id="admin-name">Admin</span></h2>
+                <p>Last login: <span id="last-login">Today at 09:45 AM</span></p>
+            </div>
+
+            <div class="admin-stats">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="total-users">1,245</h3>
+                        <p>Total Users</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="total-courses">156</h3>
+                        <p>Total Courses</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="active-students">1,012</h3>
+                        <p>Active Students</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="stat-info">
+                        <h3 id="total-lecturers">89</h3>
+                        <p>Lecturers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin-content">
+                <div class="admin-main">
+                    <div class="admin-card">
+                        <h3><i class="fas fa-chart-line"></i> System Activity</h3>
+                        <div class="chart-container">
+                            <canvas id="activity-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="admin-card">
+                        <h3><i class="fas fa-clock"></i> Recent Activity</h3>
+                        <div class="activity-list" id="recent-activity">
+                            <!-- Activities loaded via JavaScript -->
+                        </div>
+                        <a href="#" class="view-all">View All Activity</a>
+                    </div>
+                </div>
+
+                <div class="admin-sidebar">
+                    <div class="admin-card">
+                        <h3><i class="fas fa-exclamation-circle"></i> Notifications</h3>
+                        <div class="notification-list" id="notifications">
+                            <!-- Notifications loaded via JavaScript -->
+                        </div>
+                        <a href="#" class="view-all">View All Notifications</a>
+                    </div>
+
+                    <div class="admin-card quick-actions">
+                        <h3><i class="fas fa-bolt"></i> Quick Actions</h3>
+                        <div class="actions-grid">
+                            <a href="users/add_user.html" class="action-item">
+                                <i class="fas fa-user-plus"></i>
+                                <span>Add User</span>
+                            </a>
+                            <a href="courses/add_course.html" class="action-item">
+                                <i class="fas fa-plus-circle"></i>
+                                <span>Add Course</span>
+                            </a>
+                            <a href="announcements.html" class="action-item">
+                                <i class="fas fa-bullhorn"></i>
+                                <span>Send Announcement</span>
+                            </a>
+                            <a href="reports/generate.html" class="action-item">
+                                <i class="fas fa-file-export"></i>
+                                <span>Generate Report</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>LASU Online Learning</h3>
+                    <p>The official e-learning platform of Lagos State University, providing quality education through technology.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../../courses.html">Courses</a></li>
+                        <li><a href="../../about.html">About Us</a></li>
+                        <li><a href="../../contact.html">Contact</a></li>
+                        <li><a href="../../faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="../../library.html">E-Library</a></li>
+                        <li><a href="../../timetable.html">Timetable</a></li>
+                        <li><a href="../../calendar.html">Academic Calendar</a></li>
+                        <li><a href="../../help.html">Help Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Lagos State University, Ojo, Lagos</li>
+                        <li><i class="fas fa-phone"></i> +234 812 345 6789</li>
+                        <li><i class="fas fa-envelope"></i> elearning@lasu.edu.ng</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LASU Online Learning Platform. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script src="../../assets/js/admin.js"></script>
+</body>
+</html>

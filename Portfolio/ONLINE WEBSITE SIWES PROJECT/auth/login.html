@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - LASU Online Learning</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudfare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header Section -->
+   <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="../images/lasu logo.jpeg" alt="LASU Logo">
+        <h1>LASU Online Learning</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../courses.html">Courses</a></li>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="login.html" class="active btn btn-login">Login</a></li>
+          <li><a href="register.html" class="btn btn-register">Reister</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+   </header>  
+
+   <!-- Login Section -->
+    <section class="auth-section">
+      <div class="container">
+        <div class="auth-form">
+          <h2>Login to Your Account</h2>
+          <form id="login-form" action="../dashboard.html" method="POST">
+            <div class="form-group">
+              <label for="email">Email or Matric Number</label>
+              <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required>
+              <a href="forgot_password.html" class="forgot-password">Forgot Password?</a>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary"><a href="../dashboard.html"></a>Login</button>
+            </div>
+          </form>
+          <div class="auth-footer">
+            <p>Don't have an account? <a href="register.html">Register here</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+     <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <h3>LASU Online Learning</h3>
+            <p>The official e-learning platform of Lagos State University, providing quality education through technology.</p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../courses.html">Courses</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+              <li><a href="../faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Resources</h3>
+            <ul>
+              <li><a href="../library.html">E-Library</a></li>
+              <li><a href="../timetable.html">Timetable</a></li>
+              <li><a href="../calendar.html">Academic Calender</a></li>
+              <li><a href="../help.html">Help Center</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Us</h3>
+            <ul>
+              <li><i class="fas fa-map-marker-alt"></i>Lagos State University, Ojo, Lagos.</li>
+              <li><i class="fas fa-phone"></i>+2349113775322</li>
+              <li><i class="fas fa-envelope"></i>eleaerning@lasu.edu.ng</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 LASU Online Learning Platform. All Rights Reserved.</p>
+        </div>
+      </div>
+     </footer>
+
+     <script src="../assets/js/main.js"></script>
+     <script src="../assets/js/scripts.js"></script>
+</body>
+</html>

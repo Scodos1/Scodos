@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSC 301 - Database Systems | LASU Online Learning</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/course.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!--Header Section-->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="../images/lasu logo.jpeg" alt="LASU Logo">
+        <h1>LASU Online Learning</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="../dashboard.html">Dashboard</a></li>
+          <li><a href="../courses.html">My Courses</a></li>
+          <li><a href="../timetable.html">Timetable</a></li>
+          <li><a href="../profile.html">Profile</a></li>
+          <li><a href="../auth/logout.html">Logout</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Course Hero Section -->
+   <section class="course-hero">
+    <div class="container">
+      <div class="course-header">
+        <h2 id="course-title">CSC 301 - Database Systems</h2>
+        <p id="course-lecturer">Prof. Adebayo Johnson</p>
+        <div class="course-meta">
+          <span id="course-dept">Computer Science</span>
+          <span id="course-level">300 Level</span>
+          <span id="course-semester">First Semester</span>
+        </div>
+        <div class="course-progress">
+          <div class="progress-bar">
+            <div class="progress" id="course-progress" style="width: 75%"></div>
+          </div>
+          <span id="progress-text">75% Complete</span>
+        </div>
+      </div>
+    </div>
+   </section>
+
+   <!-- Course Navigation -->
+    <section class="course-nav">
+      <div class="container">
+        <ul>
+          <li><a href="view_courses.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+          <li><a href="materials.html"><i class="fas fa-book"></i>Materials</a></li>
+          <li><a href="assignments.html"><i class="fas fa-tasks"></i>Assignments</a></li>
+          <li><a href="grades.html"><i class="fas fa-chart-bar"></i>Grades</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Course Content Section -->
+     <section class="course-content-section">
+      <div class="container">
+        <div class="course-content-grid">
+          <div class="course-main-content">
+            <div class="course-annoincements">
+              <h3><i class="fas fa-bullhorn"></i>Announcements</h3>
+              <div class="announcement-list" id="course-announcements">
+                <div class="announcement-item">
+                  <h4>Midtem Exam Schedule</h4>
+                  <p>The midterm exam will hold on October 15th, 2025 at the ICT Center. Please arrive 30 minutes early with your student ID.</p>
+                  <p class="announcement-date">Posted: September 28, 2025</p>
+                </div>
+                <div class="announcement-item">
+                  <h4>Assignment 2 Deadline Extended</h4>
+                  <p>Due tonumerous requests, the deadline for Assignment 2 has been extended to October 5th, 2025.</p>
+                  <p class="announcement-date">Posted: September 25, 2025</p>
+                </div>
+                <div class="announcement-item">
+                  <h4>Database Workshop</h4>
+                  <p>There will be a practical workshop on SQL queries next Tuesday. Bring your laptops with MySQL installed.</p>
+                  <p class="announcement-date">Posted: September 20, 2025</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-modules">
+              <h3><i class="fas fa-list-ul"></i>Course Modules</h3>
+              <div class="module-list" id="course-modules">
+                <div class="module-item">
+                  <h4>Module 1: Introduction to Database Systems</h4>
+                  <p>This module covers the fundamental concepts of database systems, their importance, and applications.</p>
+                  <div class="module-resources">
+                    <div class="resource-item">
+                      <i class="fas fa-file-pdf resource-icon"></i>
+                      <span>Lecture 1 Slides (PDF)</span>
+                    </div>
+                    <div class="resource-item">
+                      <i class="fas fa-video resource-icon"></i>
+                      <span>Video: Database Concepts</span>
+                    </div>
+                    <div class="resource-item">
+                      <i class="fas fa-link resource-icon"></i>
+                      <span>Additional Reading: DBMS Overview</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="module-item">
+                  <h4>Module 2: Entity-Relationship Model</h4>
+                  <p>Learn about ER diagrams, entities, relationships, and attributes in database design.</p>
+                  <div class="module-resources">
+                    <div class="resource-item">
+                      <i class="fas fa-file-pdf resource-icon"></i>
+                      <span>Lecture Slides (PDF)</span>
+                    </div>
+                    <div class="resource-item">
+                      <i class="fas fa-video resource-icon"></i>
+                      <span>Video: ER Modeling</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="module-item">
+                  <h4>Module 3: Relational Model and SQL</h4>
+                  <p>Introdution to relational database and Structured Query Language (SQL).</p>
+                  <div class="module-resources">
+                    <div class="resource-item">
+                      <i class="fas fa-file-pdf resource-icon"></i>
+                      <span>Lecture 3 Slides (PDF)</span>
+                    </div>
+                    <div class="resource-item">
+                      <i class="fas fa-video resource-icon"></i>
+                      <span>Video: SQL Basics</span>
+                    </div>
+                    <div class="resource-item">
+                      <i class="fas fa-file-code resource-icon"></i>
+                      <span>SQL Practice Exercises</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="module-item">
+                  <h4>Module 4: Database Design and Normalization</h4>
+                  <p>Learn about functional dependencies, normalization forms, and database design principles.</p>
+                  <div class="module-resources">
+                    <div class="resource-item">
+                      <span>Lecture 4 Slides (PDF)</span>
+                    </div>
+                    <div class="resource-item">
+                      <i class="fas fa-tasks resource-icon"></i>
+                      <span>Assignment: Normalization Problems</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-sidebar">
+            <div class="sidebar-card">
+              <h4><i class="fas fa-info-circle"></i>Course Information</h4>
+              <div class="course-info">
+                <p><strong>Credit Units:</strong> <span id="course-hours">Tuesday, 10am - 12pm</span></p>
+                <p><strong>Office Hours:</strong> <span id="office-hours">Monday & Thursday, 2pm - 4pm</span></p>
+              </div>
+            </div>
+
+            <div class="sidebar-card">
+              <h4><i class="fas fa-chart-line"></i>Course Progress</h4>
+              <div class="progress-details">
+                <div class="progress-item">
+                  <span>Lectures Completed</span>
+                  <span>12/16</span>
+                </div>
+                <div class="progress-item">
+                  <span>Assignments Submitted</span>
+                  <span>2/3</span>
+                  <div class="progress-item">
+                    <span>Quizzes Taken</span>
+                    <span>3/5</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sidebar-card">
+                <h4><i class="fas fa-users"></i>Course Participants</h4>
+                <div class="participants-list">
+                  <div class="participant">
+                    <img src="../images/Student-1.jpg" alt="Participant">
+                    <span>You</span>
+                  </div>
+                  <div class="participant">
+                    <img src="../images/student-2.jpg" alt="Participant">
+                    <span>Chinedu Okoro</span>
+                  </div>
+                  <div class="participant">
+                    <img src="../images/student-3.jpg" alt="Participant">
+                    <span>Bisi Adekunle</span>
+                  </div>
+                  <a href="#" class="view-all">View all 45 participants</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!-- Footer Section -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h3>LASU Online Learning</h3>
+              <p>The official e-learning platform of Lagos State University, providig quality education through technology.</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="calendar.html">Academic Calendar</a></li>
+                <li><a href="help.html">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Lagos State University, Ojo, Lagos</li>
+                <li><i class="fas fa-phone"></i>+2349113775322</li>
+                <li><i class="fas fa-envelope"></i>elearning@lasu.edu.ng</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>$copy; 2023 LASU Online Learning Platform. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/scripts.js"></script>
+</body>
+</html>

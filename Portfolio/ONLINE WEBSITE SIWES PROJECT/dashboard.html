@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - LASU Online Learning Platform</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!--Header Section-->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="images/lasu logo.jpeg" alt="LASU Logo">
+        <h1>LASU Online Learning</h1>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="dashboard.html" class="active">Dashboard</a></li>
+          <li><a href="courses.html">My Courses</a></li>
+          <li><a href="timetable.html">Timetable</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="auth/logout.html" class="btn btn-logout">Logout</a></li>
+        </ul>
+      </nav>
+      <div class="mobile-menu">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Dahboard Section -->
+   <section class="dashboard-section">
+    <div class="container">
+      <div class="dashboard-header">
+        <h2>Welcome back, <span id="student-name">Alagbe Fareed</span></h2>
+        <p>Computer Science - 300 Level</p>
+      </div>
+
+      <div class="dashboard-grid">
+        <!-- Announcements -->
+         <div class="dashboard-card announcements">
+          <h3><i class="fas fa-bullhorns"></i>Annoucements</h3>
+          <div class="announcement-list" id="announcements-container">
+            <!-- Announcements loaded via JavaScript -->
+          </div>
+          <a href="announcements.html" class="view-all">View All Announcements</a>
+         </div>
+
+         <!-- Upcoming Assignments -->
+          <div class="dashboard-card assignments">
+            <h3><i class="fas fa-tasks"></i>Upcoming Assignments</h3>
+            <div class="assignment-list" id="assignments-container">
+              <!-- Assignments loaded via JavaScript -->
+            </div>
+            <a href="courses/assignments.html" class="view-all">View All Assignments</a>
+          </div>
+
+          <!-- Recent Courses -->
+           <div class="dashboard-card courses">
+            <h3><i class="fas fa-book"></i>My Courses</h3>
+            <div class="course-list" id="courses-container">
+              <!-- Courses loaded via JavaScript -->
+            </div>
+            <a href="courses.html" class="view-all">View All Courses</a>
+           </div>
+
+           <!-- Quick Links -->
+            <div class="dashboard-card quick-links">
+              <h3><i class="fas fa-link"></i>Quick Links</h3>
+              <div class="links-grid">
+                <a href="timetable.html" class="link-item"><i class="fas fa-calendar-alt"></i>
+                <span>Timetable</span>
+                </a>
+                <a href="library.html" class="link-item">
+                  <i class="fas fa-book-open"></i>
+                  <span>E-Library</span>
+                </a>
+                <a href="calendar.html" class="link-item">
+                  <i class="fas fa-calendar-day"></i>
+                  <span>Academic Calendar</span>
+                </a>
+                <a href="help.html" class="link-item">
+                  <i class="fas fa-question-circle"></i>
+                  <span>Help Center</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <!-- Footer Section -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div class="footer-col">
+              <h3>LASU Online Learning</h3>
+              <p>The official e-learning platform of Lagos State University, providig quality education through technology.</p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class="footer-col">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Resources</h3>
+              <ul>
+                <li><a href="library.html">Library</a></li>
+                <li><a href="timetable.html">Timetable</a></li>
+                <li><a href="calendar.html">Academic Calendar</a></li>
+                <li><a href="help.html">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h3>Contact Us</h3>
+              <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Lagos State University, Ojo, Lagos</li>
+                <li><i class="fas fa-phone"></i>+2349113775322</li>
+                <li><i class="fas fa-envelope"></i>elearning@lasu.edu.ng</li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>$copy; 2023 LASU Online Learning Platform. All Rights Reserved.</p>
+          </div>
+        </div>
+      </footer>
+
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/scripts.js"></script>
+</body>
+</html>
